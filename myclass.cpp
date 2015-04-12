@@ -22,7 +22,6 @@ Rate::Rate(){
 }
 
 Penta::Penta(const Data *dt){
-	//this->AdID = dt->AdID;
 	this->oURL = dt->DisplayURL;
 	this->oAdvtsrID = dt->AdvertiserID;
 	this->oKwID = dt->KeywordID;
@@ -31,7 +30,6 @@ Penta::Penta(const Data *dt){
 }
 
 bool Penta::operator<(const Penta& that)const{
-	//if (this->AdID != that.AdID) return (this->AdID < that.AdID);
 	if (this->oURL != that.oURL) return (this->oURL < that.oURL);
 	if (this->oAdvtsrID != that.oAdvtsrID) return (this->oAdvtsrID < that.oAdvtsrID);
 	if (this->oKwID != that.oKwID) return (this->oKwID < that.oKwID);
