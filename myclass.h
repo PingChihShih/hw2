@@ -8,7 +8,6 @@ using namespace std;
 
 class Data {
 public: 
-//private:	
 	int UserID, AdID, QueryID, Position,
 		Depth, Click, Impression,
 		AdvertiserID, KeywordID,
@@ -32,7 +31,6 @@ public:
 class Penta{
 public:
 	Penta(const Data *dt);
-	//int AdID;
 	unsigned long long int oURL;
 	int oAdvtsrID, oKwID, oTtlID, oDesID;
 	bool operator<(const Penta& that)const;
