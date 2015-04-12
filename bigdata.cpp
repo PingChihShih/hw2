@@ -6,11 +6,11 @@
 #include <string.h>
 #include <ctime>
 #include "myclass.h"
+#include <algorithm>
  
 using namespace std;
 #define MAXUSER 23907644
 enum commandList {GET, CLICKED, IMPRESSED, PROFIT, QUIT};
-
 
 int findCommand(char *command){
 	char *commandString[5] = {"get", "clicked", "impressed", "profit", "quit"};
